@@ -1,37 +1,4 @@
 
-# coding: utf-8
-
-# In[8]:
-
-
-import _pickle as cPickle
-import numpy as np
-
-
-# In[9]:
-
-
-linear_reg = cPickle.load(open("reg_model.pkl", "rb"))
-
-
-# In[10]:
-
-
-test_case = np.array([[2, 3, 1800, 1950, 91505]])
-linear_reg.predict(test_case)
-prediction = linear_reg.predict(test_case)
-print_results = str(prediction)
-
-
-# In[11]:
-
-
-print(print_results)
-
-
-# In[ ]:
-
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
